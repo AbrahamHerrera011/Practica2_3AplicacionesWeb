@@ -19,11 +19,12 @@ using CalculoResistencias.Infraestructura;
 
 namespace CalculoResistencias.Controllers
 {
-    [Route("resistencia/{tirita1}/{tirita2}/{multiplicador}/{tolerancia}")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ResistenciaController : ControllerBase
     {
         [HttpGet]
+        [Route("calculo/{tirita1}/{tirita2}/{multiplicador}/{tolerancia}")]
         public string ResistenciaFinal(string tirita1, string tirita2, string multiplicador, string tolerancia)
         {
             string ResulFinal;
