@@ -19,7 +19,7 @@ using CalculoResistencias.Infraestructura;
 
 namespace CalculoResistencias.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("resistencia/{tirita1}/{tirita2}/{multiplicador}/{tolerancia}")]
     [ApiController]
     public class ResistenciaController : ControllerBase
     {
