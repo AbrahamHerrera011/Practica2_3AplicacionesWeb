@@ -24,6 +24,7 @@ namespace CalculoAlcohol.Controllers
     public class AlcoholemiaController : ControllerBase
     {
        [HttpGet]
+       [Route("{Tipobebida}/{cantidad}/{kg}")]
        //ahora voy a devolver una cadena de texto a la Api como respuesta, recibiré los parametros: Tipo de bebida, cantidad y peso de la persona en kg
        public string Alcoholemia(string TipoBebida, double cantidad, double kg)
         {
